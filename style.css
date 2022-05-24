@@ -1,0 +1,50 @@
+body {
+    background-color: antiquewhite;
+    padding: 20px;
+    font-family: "Avenir"
+}
+#form1 {
+
+}
+.boxStyle{
+    background-color: white;
+    padding: 50px;
+    margin-bottom: 20px;
+    border-radius: 7px;
+    box-shadow: -10px -10px 5px grey;
+    overflow-wrap: break-word;
+}
+button {
+    padding: 5px 15px;
+    border:none;
+    background-color: peru;
+    color: white;
+    cursor:pointer;
+    transition: all 0.5s;
+}
+button span{
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+button span:after{
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+
+}
+button:hover{
+    background-color: black;
+
+}
+button:hover span{
+    padding-right: 25px;
+}
+button:hover span:after{
+    opacity: 1;
+    right: 0;
+}
